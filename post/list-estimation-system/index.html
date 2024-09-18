@@ -1,0 +1,228 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>榜单评价系统 | Starryforest</title>
+
+<link rel="shortcut icon" href="https://starryforest.com/favicon.ico?v=1726671528411">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://starryforest.com/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1748112-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-1748112-2');
+</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Starryforest
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1726671528411"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    榜单评价系统
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2014-06-28 ·
+                    </time>
+                    
+                        <a href="https://starryforest.com/tag/zkXaYqcYwN/" class="post-tags">
+                            # 设定
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h2 id="目的">目的</h2>
+<p>建立「评议团」制度，目的在于优化榜单结构，排除外部各类因素对榜单的影响。</p>
+<h2 id="总体策略">总体策略</h2>
+<p>评议团由一定数量的内部人员组成，评议团成员独立对榜单内容进行评价，给出参考分数，最后将所有成员给出的分数进行加权调整，得出最终榜单。</p>
+<h2 id="榜单调整结构">榜单调整结构</h2>
+<ol>
+<li>
+<p>榜单单项内容评议方式。采取评分制，由评议团成员各自对其评分，剔除极端分数（极端高分/极端低分）后，对评议团成员所作出评分，结合成员影响力加权，得出最终评分和榜单位置。</p>
+</li>
+<li>
+<p>评议团成员影响力加权</p>
+</li>
+<li>
+<p>即对评议团成员本身评议能力的认定，其评议能力越高，其对榜单内容的评价越具有影响力。评议团成员以往多次（可限定范围）影响力加权累加后，作用于其作出的评价。</p>
+</li>
+<li>
+<p>影响评议团成员影响力加权的，只能是评议结果。单一评议团成员所作评议结果越贴近评议团整体评议结果，越有益于其自身影响力加权的增加。无论是过度高于还是过度低于评议团整体评议结果，都对评议团成员影响力加权起负面作用，在之后的评议时，其影响力加权将会被降低。</p>
+</li>
+<li>
+<p>影响力正负关系的调整。越贴近评议团整体评价结果，将获得越多的影响力加权。评议团成员所作极端评价被剔除后，将获得极低影响力加权的累加，甚至减少。</p>
+</li>
+<li>
+<p>加权领域限制。评议团成员影响力加权的累加应当发生在同一评价领域，交叉领域不得累加。领域的划分取决于评议团规模。相邻领域的累加（在坚持进行累加的情况下）方式应当考虑引入新的加权。</p>
+</li>
+<li>
+<p>人工干预机制。即对榜单最终结果的人为调整。需要非常高的权限和非常慎重的考虑，人工干预机制的启动标志着评议团整体的失败，也意味着整个榜单评价系统的毁灭，之后可能需要进行评议团清洗和重建。</p>
+</li>
+</ol>
+<h2 id="缺陷">缺陷</h2>
+<ol>
+<li>
+<p>整体性堕落。稳定的评价系统需要评议团成员有足够的数量和相近的影响力加权，评议团整体性水平下降将摧毁整个榜单评价结论，这种结果一旦发生，除非人工干预机制启动，很难从评议团内部进行挽救。</p>
+</li>
+<li>
+<p>独裁性。过少的评议团成员或差距过大的影响力加权分布，将导致评议团整体结果倾向于极少部分成员的意志，而由于加权方式的影响，会进一步导致评议团内拥有绝对优势的成员意志的强化，虽然该部分成员可以通过放弃评价的方式维持评议团正常运作，但事实上整个评议团结构已处于名存实亡的随时可被摧毁状态。</p>
+</li>
+</ol>
+<h2 id="关键因素">关键因素</h2>
+<ol>
+<li>
+<p>极端分数所含范围。</p>
+</li>
+<li>
+<p>影响力加权计算方式。</p>
+</li>
+</ol>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://starryforest.com/post/3-Years/" class="post-title gt-a-link">
+                    Three Years
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">雾和雪，风与叶，静夜望断云遮月</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        © 2006-2023 All Rights Reserved
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://starryforest.com/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
